@@ -19,7 +19,12 @@ export default function Header() {
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" className="flex items-center">
-            <Image src="/images/header/logo2.png" width="95" height="97" />
+            <Image
+              src="/images/header/logo2.png"
+              alt="logo chickfarm"
+              width="95"
+              height="97"
+            />
             {/* <p className="self-center text-xl font-bold whitespace-nowrap dark:text-white text-amber-700">
               Chick<span>Farm</span>
             </p> */}

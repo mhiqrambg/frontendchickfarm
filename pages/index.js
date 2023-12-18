@@ -6,7 +6,7 @@ import WeHelp from '../components/Sections/WeHelp';
 import SmartShop from '../components/Sections/SmartShop';
 import SpecialEX from '../components/Sections/SpecialEX';
 import ContactUs from '../components/Sections/ContactUs';
-import FirstStart from '../components/Sections/firstStart';
+import Beranda from '../components/Sections/Beranda';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <FirstStart />
+        <Beranda />
         <SpecialEX />
         <WeHelp />
         <SmartShop />
