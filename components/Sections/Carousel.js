@@ -1,81 +1,80 @@
 import React from 'react';
+import Image from '../Images/index';
 
-export default function Carousel() {
+const carouselData = [
+  {
+    id: 1,
+    title: 'Shooting Stars',
+    content:
+      'Rasakan kemudahan kontrol budidaya peternakanmu melalui smartphone. Agrinis Farm dapat membantu pencatatan proses produksi peternakan Anda dengan mudah dan memantau performa kandang secara akurat untuk meningkatkan hasil panen dan pendapatan.',
+    image: {
+      src: '/images/carousel/1.jpg',
+      alt: 'asd',
+    },
+  },
+  {
+    id: 2,
+    title: 'The Catalyzer lorem ipsum dolor sit amet',
+    content:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+
+  {
+    id: 3,
+    title: 'Neptune',
+    content:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+  {
+    id: 4,
+    title: 'Melanchole',
+    content:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+];
+
+const Carousel = () => {
   return (
-    <div className="h-96 border"></div>
-    //   <div className="h-96 border">
-    //     <div
-    //       id="default-carousel"
-    //       className="relative w-full"
-    //       data-carousel="slide"
-    //     >
-    //       {/* Carousel wrapper */}
-    //       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-    //         {/* Item 1 */}
-    //         <div
-    //           className="hidden duration-700 ease-in-out"
-    //           data-carousel-item=""
-    //         >
-    //           <img
-    //             src="/images/carousel/2.jpg"
-    //             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-    //             alt="..."
-    //           />
-    //         </div>
-    //         {/* Item 2 */}
-    //         <div
-    //           className="hidden duration-700 ease-in-out"
-    //           data-carousel-item=""
-    //         >
-    //           <img
-    //             src="/images/carousel/1.jpg"
-    //             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-    //             alt="..."
-    //           />
-    //         </div>
-    //         {/* Item 3 */}
-    //         <div
-    //           className="hidden duration-700 ease-in-out"
-    //           data-carousel-item=""
-    //         >
-    //           <img
-    //             src="/images/carousel/3.jpg"
-    //             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-    //             alt="..."
-    //           />
-    //         </div>
-    //         {/* Item 4 */}
-    //         <div
-    //           className="hidden duration-700 ease-in-out"
-    //           data-carousel-item=""
-    //         >
-    //           <img
-    //             src="/images/carousel/4.jpg"
-    //             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-    //             alt="..."
-    //           />
-    //         </div>
-    //       </div>
-    //       {/* Slider indicators */}
-    //       <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-    //         {/* Indicator buttons */}
-    //       </div>
-    //       {/* Slider controls */}
-    //       <button
-    //         type="button"
-    //         className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-    //         data-carousel-prev=""
-    //       >
-    //         {/* Previous button */}
-    //       </button>
-    //       <button
-    //         type="button"
-    //         className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-    //         data-carousel-next=""
-    //       >
-    //         {/* Next button */}
-    //       </button>
-    //     </div>
-    //   </div>
+    <section className="text-gray-600 body-font ">
+      <div className=" px-5 py-24 mx-auto border ">
+        <div className="flex flex-col text-center w-full mb-20">
+          <h1 className="font-bold sm:text-5xl text-5xl  title-font mb-4 text-gray-900">
+            Kenapa Harus Aplikasi Kami?
+          </h1>
+        </div>
+        <div className="flex flex-wrap mt-20 items-center justify-center  max-w-7xl mx-auto border">
+          {carouselData.map((item) => (
+            <div
+              key={item.id}
+              className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+            >
+              <h2 className="text-4xl  text-gray-900 font-medium title-font mb-2 ">
+                {item.title}
+              </h2>
+              <p className="leading-relaxed text-base mb-4">{item.content}</p>
+              <a className="text-indigo-500 inline-flex items-center">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          ))}
+        </div>
+        <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          Button
+        </button>
+      </div>
+    </section>
   );
-}
+};
+
+export default Carousel;

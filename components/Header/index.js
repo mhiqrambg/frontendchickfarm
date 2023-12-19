@@ -26,7 +26,7 @@ export default function Header() {
           </a>
           <div className="flex items-center lg:order-3 py-2">
             <button className="rounded-full py-1 px-10 bg-amber-900 hover:bg-amber-700 text-white text-2xl font-medium mt-4">
-              asdasdas Kami
+              s
             </button>
             {/* <a href="#playstore">
               <Image

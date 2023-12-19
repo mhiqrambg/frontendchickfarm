@@ -69,3 +69,27 @@ a {
     opacity: 0;
   }
 }
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .text-responsive {
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  /* .px4 .mt- {
+    margin-top: 20px;
+  } */
+}
+
+@media (min-width: 901px) {
+  .text-responsive {
+    color: brown;
+  }
+}
