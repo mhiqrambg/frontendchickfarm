@@ -4,7 +4,7 @@ import Image from '../Images/index';
 const carouselData = [
   {
     id: 1,
-    title: 'Shooting Stars',
+    title: 'Aplikasi Untuk Manajemen Kandang',
     content:
       'Rasakan kemudahan kontrol budidaya peternakanmu melalui smartphone. Agrinis Farm dapat membantu pencatatan proses produksi peternakan Anda dengan mudah dan memantau performa kandang secara akurat untuk meningkatkan hasil panen dan pendapatan.',
     image: {
@@ -36,7 +36,7 @@ const carouselData = [
 const Carousel = () => {
   return (
     <section className="text-gray-600 body-font ">
-      <div className=" px-5 py-24 mx-auto border ">
+      <div className=" px-5 py-24 mx-auto border h-screen items-center  justify-center max-w-7xl ">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="font-bold sm:text-5xl text-5xl  title-font mb-4 text-gray-900">
             Kenapa Harus Aplikasi Kami?
@@ -52,26 +52,9 @@ const Carousel = () => {
                 {item.title}
               </h2>
               <p className="leading-relaxed text-base mb-4">{item.content}</p>
-              <a className="text-indigo-500 inline-flex items-center">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
             </div>
           ))}
         </div>
-        <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-          Button
-        </button>
       </div>
     </section>
   );

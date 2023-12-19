@@ -18,7 +18,7 @@ export default function HomeStart() {
 
   return (
     <div className="px-4">
-      <div className="h-screen flex items-center justify-center max-w-7xl mx-auto">
+      <div className="h-screen items-center mt-[200px] justify-center max-w-7xl mx-auto">
         <div className="grid grid-cols-2 mt-20 relative">
           <div className="col-span-2 lg:col-span-1">
             <div className="h-full flex items-start justify-center flex-col">
