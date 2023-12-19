@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image from '../Images/index';
 
 export default function Header() {
   const data = {
@@ -8,34 +8,34 @@ export default function Header() {
       { id: 2, title: 'Tentang kami', href: '#about' },
       { id: 3, title: 'Layanan', href: '#layanan' },
       { id: 4, title: 'Blog & Artikel', href: '#artikel' },
-
-      // { id: 4, title: 'Home', href: 'home' },
     ],
   };
 
   const [show, setShow] = useState(false);
+
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full z-10 shadow-sh-header">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" className="flex items-center">
             <Image
-              src="/images/header/logo2.png"
-              alt="logo chickfarm"
-              width="95"
-              height="97"
+              className="relative w-[140px] h-[60px]"
+              src="/images/header/logo1.png"
+              alt="bradn-Image"
             />
-            {/* <p className="self-center text-xl font-bold whitespace-nowrap dark:text-white text-amber-700">
-              Chick<span>Farm</span>
-            </p> */}
           </a>
-          <div className="flex items-center lg:order-2">
-            <a
-              href="#"
-              className="text-white dark:text-white bg-amber-700 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-            >
-              Hubungi kami
-            </a>
+          <div className="flex items-center lg:order-3 py-2">
+            <button className="rounded-full py-1 px-10 bg-amber-900 hover:bg-amber-700 text-white text-2xl font-medium mt-4">
+              asdasdas Kami
+            </button>
+            {/* <a href="#playstore">
+              <Image
+                className="relative w-[140px] h-[60px]"
+                src="/images/assets/playstore.svg"
+                alt="playstore"
+              />
+            </a> */}
+
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
@@ -44,7 +44,7 @@ export default function Header() {
               aria-expanded="false"
               onClick={() => setShow(!show)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Buka daftar menu</span>
               <svg
                 className="w-6 h-6"
                 fill="currentColor"
@@ -74,15 +74,15 @@ export default function Header() {
           <div
             className={`${
               show ? 'block' : 'hidden'
-            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1 absolute md:static top-16 bg-white left-0`}
+            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1 absolute md:static top-16 bg-white left-0 mt-5`}
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 border md:border-none">
+            <ul className="flex flex-col mt-2 font-medium lg:flex-row lg:space-x-8 lg:mt-0 border md:border-none">
               {data.list_nav.map((item) => (
                 <li key={item.id}>
                   <a
                     href={item.href}
-                    className={`block py-2 pr-4 pl-3 rounded ${
+                    className={`block py-3 pr-4 pl-3 rounded ${
                       item.isSelected ? 'lg:text-amber-700' : 'text-black'
                     } lg:bg-transparent lg:p-0 dark:text-white hover:text-amber-700`}
                     aria-current={item.isSelected ? 'page' : undefined}

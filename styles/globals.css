@@ -28,3 +28,44 @@ a {
     background: black;
   }
 }
+
+@layer components {
+  .container-h {
+    @apply h-96 border max-w-7xl mx-auto;
+  }
+}
+
+.background {
+  background-size: 400%;
+  animation: gradient 15s ease infinite;
+  transition: gradient 0.3s all;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 10% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 10% 50%;
+  }
+}
+
+.cube {
+  transform: rotate(0deg);
+  animation: cube 12s ease-in forwards infinite;
+  transition: 0.3s all;
+}
+
+@keyframes cube {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(960deg);
+    opacity: 0;
+  }
+}
