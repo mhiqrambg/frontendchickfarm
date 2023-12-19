@@ -23,7 +23,7 @@ export default function HomeStart() {
           <div className="col-span-2 lg:col-span-1">
             <div className="h-full flex items-start justify-center flex-col">
               <p className="text-7xl font-extrabold text-amber-700">
-                chick<span className="text-black">Farm's</span>
+                chick<span className="text-black">Farm&apos;s</span>
               </p>
               <p className="font-medium text-gray-600 mt-7 text-4xl">
                 Inovasi untuk Peternak Sukses: Temukan Solusi Terbaik Bersama
@@ -45,6 +45,7 @@ export default function HomeStart() {
                   className="relative w-full lg:w-auto h-[550px] max-w-[650px]"
                   alt="HomeStart.png"
                   src="/images/HomeStart/hp1.1.png"
+                  layout="fill"
                 />
               )}
               {currentImage === 2 && (
