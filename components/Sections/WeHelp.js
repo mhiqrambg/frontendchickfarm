@@ -46,13 +46,13 @@ export default function WeHelp() {
 
   return (
     <div data-theme="light">
-      <div className="container max-w-7xl mx-auto p-10 ">
+      <div className="container max-w-7xl mx-auto  ">
         <div className="pt-10">
-          <h1 className="text-3xl font-extrabold mb-14">
+          <h1 className="text-3xl font-extrabold mb-14 p-5">
             Kenapa harus aplikasi kami?
           </h1>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
