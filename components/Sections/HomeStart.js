@@ -17,12 +17,12 @@ export default function HomeStart() {
   };
 
   return (
-    <div className="px-4">
-      <div className="h-screen items-center mt-[200px] justify-center max-w-7xl mx-auto">
+    <div className="px-9 pt-12" data-theme="light">
+      <div className="container max-w-7xl mx-auto flex items-center justify-center">
         <div className="grid grid-cols-2 mt-20 relative">
           <div className="col-span-2 lg:col-span-1">
-            <div className="h-full flex items-start justify-center flex-col">
-              <p className="text-7xl font-extrabold text-amber-700">
+            <div className="h-full flex items-start justify-center flex-col ">
+              <p className="text-6xl font-extrabold text-amber-700">
                 chick<span className="text-black">Farm&apos;s</span>
               </p>
               <p className="font-medium text-gray-600 mt-7 text-4xl">
@@ -38,14 +38,13 @@ export default function HomeStart() {
               </a>
             </div>
           </div>
-          <div className="col-span-2 lg:col-span-1 flex flex-col text-center w-full mb-20 justify-end">
+          <div className="col-span-2 lg:col-span-1 flex flex-col text-center w-full mb-20 justify-end pt-[56px]">
             <div>
               {currentImage === 1 && (
                 <Image
                   className="relative w-full lg:w-auto h-[550px] max-w-[650px]"
                   alt="HomeStart.png"
                   src="/images/HomeStart/hp1.1.png"
-                  layout="fill"
                 />
               )}
               {currentImage === 2 && (

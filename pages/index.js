@@ -19,13 +19,13 @@ export default function Home() {
 
       <div>
         <HomeStart />
-        <Carousel />
-        <SpecialEX />
+        {/* <Carousel /> */}
+        {/* <SpecialEX /> */}
         <WeHelp />
-        <SmartShop />
-        <Portfolio />
-        <Testimonials />
-        <ContactUs />
+        {/* <SmartShop /> */}
+        {/* <Portfolio /> */}
+        {/* <Testimonials /> */}
+        {/* <ContactUs /> */}
       </div>
     </div>
   );
