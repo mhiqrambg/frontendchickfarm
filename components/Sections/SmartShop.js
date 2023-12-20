@@ -3,12 +3,12 @@ import Image from '../Images/index';
 
 export default function SmartShop() {
   return (
-    <div className=" container max-w-7xl mx-auto ">
+    <div className=" container max-w-7xl mx-auto mt-10">
       <div>
-        <h1 className="text-3xl font-extrabold p-5">Fitur Aplikasi</h1>
+        <h1 className="text-3xl font-extrabold px-5">Fitur Aplikasi</h1>
       </div>
       <div className="flex flex-col w-full lg:flex-row">
-        <div className="grid flex-grow h-[900px] card bg-base-300 rounded-box place-items-center">
+        <div className="grid flex-grow h-[900px] card bg-white rounded-box place-items-center">
           {/* HP */}
           <div className="mockup-phone w-[232px] h-[456px]">
             <div className=""></div>
@@ -37,7 +37,7 @@ export default function SmartShop() {
             </p>
           </div>
         </div>
-        <div className="grid flex-grow h-[900px] card bg-base-300 rounded-box place-items-center">
+        <div className="grid flex-grow h-[900px] card bg-white rounded-box place-items-center">
           {/* HP */}
           <div className="mockup-phone w-[232px] h-[456px]">
             <div className="camera"></div>
@@ -64,15 +64,15 @@ export default function SmartShop() {
             </p>
           </div>
         </div>
-        <div className="grid flex-grow h-[900px] card bg-base-300 rounded-box place-items-center">
+        <div className="grid flex-grow h-[900px] card bg-white rounded-box place-items-center">
           {/* HP */}
           <div className="mockup-phone w-[232px] h-[456px]">
-            <div className="camera"></div>
+            <div className=""></div>
             <div className="display">
               <div className="artboard artboard-demo phone-1">
                 {' '}
                 <Image
-                  className="relative w-[220px] h-[490px] mr-[110px] mb-[135px]"
+                  className="relative w-[220px] h-[445px] mr-[110px] mb-[90px]"
                   alt="broiler1.png"
                   src="/images/SmartShop/hp1.3.png"
                 />

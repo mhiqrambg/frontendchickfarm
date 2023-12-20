@@ -11,36 +11,36 @@ export default function WeHelp() {
     },
     {
       imageSrc: '/images/WeHelp/fleksibel.png',
-      title: 'Fleksibel',
+      title: 'Gratis',
       description:
         'Aplikasi kami dapat diakses dari berbagai lokasi dan dapat diunduh secara gratis dengan ukuran file yang ringan.',
     },
     {
       imageSrc: '/images/WeHelp/Keamanan.png',
-      title: 'Keamanan',
+      title: 'Privasi',
       description:
         'Kami menjaga privasi pengguna dengan mengelola data secara aman, hanya dapat diakses oleh pengguna yang sah.',
     },
     {
       imageSrc: '/images/WeHelp/pembayaran.png',
-      title: 'Transaksi',
+      title: 'Shop',
       description:
         'Pembayaran bisa dilakukan melalui E-Wallet, m-banking, Virtual Account, dan COD (Cash on Delivery).',
     },
   ];
   const FeatureCard = ({ imageSrc, title, description }) => (
-    <div className="h-[230px] card rounded-box place-items-left">
+    <div className="h-[260px] card rounded-box place-items-left">
       <div className="">
         <h1 className="text-3xl font-bold flex">
           <Image
             src={imageSrc}
-            className="relative w-[28px] h-[28px] md:w-[40px] md:h-[40px] mr-2 mt-[6px]"
+            className="relative w-[34px] h-[34px] md:w-[40px] md:h-[40px] mr-2 "
           />
 
           {title}
         </h1>
       </div>
-      <p className="mt-5 font-medium text-gray-600 ">{description}</p>
+      <p className="mt-6 font-medium text-gray-600 pt-">{description}</p>
     </div>
   );
 
@@ -48,9 +48,12 @@ export default function WeHelp() {
     <div data-theme="light">
       <div className="container max-w-7xl mx-auto  ">
         <div className="pt-10">
-          <h1 className="text-3xl font-extrabold mb-14 p-5">
+          <h1 className="text-5xl font-extrabold  px-5 pt-10">
             Kenapa harus aplikasi kami?
           </h1>
+          <p className="font-medium text-gray-600 p-5">
+            Kami hadir untuk membantu peternak ayam dalam bisnis.
+          </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
           {features.map((feature, index) => (
