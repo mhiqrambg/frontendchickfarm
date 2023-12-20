@@ -1,22 +1,6 @@
 import React from 'react';
 import Image from '../Images/index';
 
-const FeatureCard = ({ imageSrc, title, description }) => (
-  <div className="h-[230px] card rounded-box place-items-left">
-    <div className="">
-      <h1 className="text-3xl font-bold flex">
-        <Image
-          src={imageSrc}
-          className="relative w-[28px] h-[28px] md:w-[40px] md:h-[40px] mr-2 mt-[6px]"
-        />
-
-        {title}
-      </h1>
-    </div>
-    <p className="mt-5 font-medium ">{description}</p>
-  </div>
-);
-
 export default function WeHelp() {
   const features = [
     {
@@ -44,12 +28,27 @@ export default function WeHelp() {
         'Pembayaran bisa dilakukan melalui E-Wallet, m-banking, Virtual Account, dan COD (Cash on Delivery).',
     },
   ];
+  const FeatureCard = ({ imageSrc, title, description }) => (
+    <div className="h-[230px] card rounded-box place-items-left">
+      <div className="">
+        <h1 className="text-3xl font-bold flex">
+          <Image
+            src={imageSrc}
+            className="relative w-[28px] h-[28px] md:w-[40px] md:h-[40px] mr-2 mt-[6px]"
+          />
+
+          {title}
+        </h1>
+      </div>
+      <p className="mt-5 font-medium text-gray-600 ">{description}</p>
+    </div>
+  );
 
   return (
     <div data-theme="light">
       <div className="container max-w-7xl mx-auto p-10 ">
         <div className="pt-10">
-          <h1 className="text-3xl font-bold mb-14">
+          <h1 className="text-3xl font-extrabold mb-14">
             Kenapa harus aplikasi kami?
           </h1>
         </div>

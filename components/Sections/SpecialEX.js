@@ -10,12 +10,12 @@ export default function SpecialEX() {
       <div className="grid grid-cols-2 ">
         <div className="text-[22px] font-medium text-gray-600">
           <p className="">
-            Indonesia's chicken farming industry is rapidly expanding,{' '}
+            Indonesia chicken farming industry is rapidly expanding,
             <span className="">with 3 billion broilers produced in 2022</span>,
-            making it a crucial sector in the country's livestock business.
+            making it a crucial sector in the country s livestock business.
             There are hundreds of thousands of chicken farmers in Indonesia, and
             ensuring the health and quality of their poultry is a top priority.
-          </p>{' '}
+          </p>
           <br />
           <p>
             Indonesian chicken farmers lack effective methods for early disease
