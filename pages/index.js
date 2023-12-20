@@ -22,7 +22,7 @@ export default function Home() {
         {/* <Carousel /> */}
         {/* <SpecialEX /> */}
         <WeHelp />
-        {/* <SmartShop /> */}
+        <SmartShop />
         {/* <Portfolio /> */}
         {/* <Testimonials /> */}
         {/* <ContactUs /> */}
