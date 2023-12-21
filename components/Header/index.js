@@ -1,7 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from '../Images/index';
+import { darkButton } from '../Button/darkthema';
 
 export default function Header() {
+  // Check if localStorage is available (client-side)
+  const initialTheme =
+    typeof window !== 'undefined' ? localStorage.getItem('theme') : 'light';
+
+  const [theme, setTheme] = useState(initialTheme);
+
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && localStorage) {
+      localStorage.setItem('theme', theme);
+      const localTheme = localStorage.getItem('theme');
+      document.querySelector('html').setAttribute('data-theme', localTheme);
+    }
+  }, [theme]);
+
   const data = {
     list_nav: [
       { id: 1, title: 'Beranda', href: '#home', isSelected: true },
@@ -43,6 +66,7 @@ export default function Header() {
               </svg>
               <input
                 type="checkbox"
+                onChange={handleToggle}
                 value="synthwave"
                 className="toggle theme-controller"
               />

@@ -45,7 +45,7 @@ export default function WeHelp() {
   );
 
   return (
-    <div data-theme="light">
+    <div id="layanan">
       <div className="container max-w-7xl mx-auto  ">
         <div className="pt-10">
           <h1 className="text-5xl font-extrabold  px-5 pt-10">

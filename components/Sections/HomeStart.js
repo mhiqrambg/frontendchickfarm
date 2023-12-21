@@ -17,13 +17,13 @@ export default function HomeStart() {
   };
 
   return (
-    <div className="px-9 pt-12" data-theme="light">
+    <div className="px-9 pt-12">
       <div className="container max-w-7xl mx-auto flex items-center justify-center">
         <div className="grid grid-cols-2 mt-20 relative">
           <div className="col-span-2 lg:col-span-1">
             <div className="h-full flex items-start justify-center flex-col ">
               <p className="text-6xl font-extrabold text-amber-700">
-                chick<span className="text-black">Farm&apos;s</span>
+                chick<span className="">Farm&apos;s</span>
               </p>
               <p className="font-medium text-gray-600 mt-7 text-4xl">
                 Inovasi untuk Peternak Sukses: Temukan Solusi Terbaik Bersama

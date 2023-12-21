@@ -8,7 +8,7 @@ export default function SmartShop() {
         <h1 className="text-3xl font-extrabold px-5">Fitur Aplikasi</h1>
       </div>
       <div className="flex flex-col w-full lg:flex-row">
-        <div className="grid flex-grow h-[900px] card bg-white rounded-box place-items-center">
+        <div className="grid flex-grow h-[900px] card  rounded-box place-items-center">
           {/* HP */}
           <div className="mockup-phone w-[232px] h-[456px]">
             <div className=""></div>
@@ -37,7 +37,7 @@ export default function SmartShop() {
             </p>
           </div>
         </div>
-        <div className="grid flex-grow h-[900px] card bg-white rounded-box place-items-center">
+        <div className="grid flex-grow h-[900px] card  rounded-box place-items-center">
           {/* HP */}
           <div className="mockup-phone w-[232px] h-[456px]">
             <div className="camera"></div>
@@ -64,7 +64,7 @@ export default function SmartShop() {
             </p>
           </div>
         </div>
-        <div className="grid flex-grow h-[900px] card bg-white rounded-box place-items-center">
+        <div className="grid flex-grow h-[900px] card  rounded-box place-items-center">
           {/* HP */}
           <div className="mockup-phone w-[232px] h-[456px]">
             <div className=""></div>
